@@ -4,7 +4,7 @@
 
 \#define set_top(T) (pthread_setspecific(top_key, (T)), (void)((T) == (struct except_stacknode \*) 0))
 
-\#define set_catcher(C) (pthread_setspecific(uh_key, (void *) (C)), (void)((C) == (void (\*)(except_t \*)) 0))
+\#define set_catcher(C) (pthread_setspecific(uh_key, (void \*) (C)), (void)((C) == (void (\*)(except_t \*)) 0))
 
 \#define set_alloc(A) (pthread_setspecific(alloc_key, (void \*) (A)), (void)((A) == (void \*(\*)(size_t)) 0))
 
