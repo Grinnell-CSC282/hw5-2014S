@@ -11,6 +11,7 @@ A few useful macros....
 ### Get array size
 \#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
-### References:
+References:
 > array size: http://www.lainoox.com/tag/c-macro-examples/
+
 > foreach: http://stackoverflow.com/questions/1772119/c-the-most-useful-user-made-c-macros-in-gcc-also-c99
