@@ -1,17 +1,11 @@
 A few useful macros....
 ### for-each
-\#define foreach(item, array) \
-
-    for(int keep=1, \
-    
-            count=0,\
-            
-            size=sizeof (array)/sizeof *(array); \
-            
-        count != size; \
-        
-        keep=1, count++) \
-        
+\#define foreach(item, array) \\
+    for(int keep=1, \\
+            count=0,\\
+            size=sizeof (array)/sizeof *(array); \\
+        count != size; \\
+        keep=1, count++) \\
       for(item = (array)+count; keep; keep = !keep)
 
 ### Get array size
