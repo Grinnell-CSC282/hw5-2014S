@@ -1,6 +1,6 @@
 A few useful macros....
 ### for-each
-#define foreach(item, array) \
+\#define foreach(item, array) \
     for(int keep=1, \
             count=0,\
             size=sizeof (array)/sizeof *(array); \
@@ -9,7 +9,7 @@ A few useful macros....
       for(item = (array)+count; keep; keep = !keep)
 
 ### Get array size
-#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
+\#define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
 References:
 > array size: http://www.lainoox.com/tag/c-macro-examples/
